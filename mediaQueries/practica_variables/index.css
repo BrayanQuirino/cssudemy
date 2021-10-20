@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-base-gradient: linear-gradient(to right, #304dd080 0%, #33086785 100%);
+    --color-base1: #304dd0;
+    --color-base2: #330867;
+    --border-radius: 5px;
+    --transition: .3s;
+    --box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.479);
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        var(--color-base-gradient),
+        url(./mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: var(--font-family)
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width:768px) {
+    .formulario{
+        width: 500px;
+    }
+}
+
+.caja-texto{
+
+    width: 100%;
+    margin: 10px auto;
+    height: 2rem;
+    font-family: var(--font-family);
+    outline: none;
+    max-width: 100%;
+    min-width: 100%;  
+}
+
+.mensaje{
+    height: 5rem;
+    min-height: 5rem;
+}
+
+.boton{
+
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--color-base1);
+    border-radius: var(--border-radius);
+    background-image: var(--color-base-gradient);
+    color:white;
+    text-align: center;
+
+
+    width: 90%;
+}
+
+.boton:hover{
+    background: white;
+    color: var(--color-base1);
+    transition: var(--transition);
+    
+}
+.formulario-title{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;
+}
+
+.cajas{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

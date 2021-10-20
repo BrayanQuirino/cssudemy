@@ -1,0 +1,92 @@
+*{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    font-family: 'Arial';
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background: steelblue;
+    /*box-shadow: h-offset v-offset blur spread color;
+        h-offset: sombra horizontal
+        v.offset: sombra verical
+        blur: difuminado
+        spred; prolongado de la sombra
+        color: color de la sombra
+    
+    */
+
+    /*
+    Una sombra
+    box-shadow: 10px 10px 10px;*/
+
+    box-shadow: 10px 10px black,
+                -10px 10px purple,
+                10px -10px blue;
+}
+
+.card{
+    display: block;
+    margin: 50px auto;
+    border: 0px solid transparent;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #639DC3;
+}
+
+.button{
+    text-decoration: none;
+    background: #0E6ABF;
+    text-align: center;
+    border: 1px solid transparent;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;        
+    align-items:center;/*Vertical align*/
+    justify-content:center;/*horizontal align*/
+}
+
+
+.parrafo{
+    display: block;
+    text-align: justify;
+    width: inherit;
+    margin: 10px auto;
+}
+
+.title{
+    text-align: center;
+    color: #0E6ABF;
+    margin: 10px auto;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid transparent;
+}
+
+img{
+    display: block;
+    width: inherit;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.goku{
+    display: block;
+    width: 350px;
+    margin: 30px auto;
+    filter: drop-shadow(0 0 20px gold);
+    /*box-shadow:  0 0 10px 2px gold;*/
+}

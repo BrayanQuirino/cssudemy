@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    background-color: purple;
+    height: 70px;
+    padding: 0 50px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.enlace{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.enlace:hover{
+    color: purple;
+    background-color: white;
+}
+
+.section{
+    height: 100vh;
+}
+
+.section:nth-of-type(1){
+    margin-top: 70px;
+}

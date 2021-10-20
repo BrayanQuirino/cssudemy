@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 10px auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+    padding: 20px 20px;
+    background: 
+        linear-gradient(to top, #a18cd159 0%, #fbc2eb44 100%),
+        url(./xim.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 5px 1px purple;
+}
+
+.title{
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: underline;
+    color: white;
+    margin: 10px auto;
+}
+
+.parrafo{
+    text-align: justify;
+    word-spacing: 1px;
+    color: white;
+}
+
+.negrita{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.enlace{
+    padding: 10px 25px;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    color: white
+}

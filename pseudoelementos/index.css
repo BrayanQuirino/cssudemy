@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: salmon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    margin: 30px auto;
+    width: 50%;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: -10px -10px 3px rgba(220, 220, 220, 0.459);
+}
+
+.title{
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 3px solid salmon;
+    width: 90%;
+}
+
+/*Seleccionar texto antes de copiar */
+p::selection{
+    background-color: crimson;
+    color: white;
+}
+
+p::first-line{
+    background-color: blueviolet;
+}
+
+p::first-letter{
+    font-size: 5rem;
+}
+
+input[type='text']::placeholder{
+    color:black;
+}
+
+h2::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: purple;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: purple;
+}
+
+li{
+    list-style: none;
+    border-bottom: 10px;
+    padding: 0;
+}
+
+
+/*Viñetas con estilo*/
+
+ul{
+    counter-reset: contador;
+}
+
+li::before{
+    /*Siempre hay que darle display*/
+    display: inline-flex;
+    content: counter(contador);
+    counter-increment: contador;
+    background-color: salmon;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:white;
+    text-align: center;
+    margin: 5px 10px;
+}

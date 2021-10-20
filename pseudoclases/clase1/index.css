@@ -1,0 +1,159 @@
+/*
+Altera la raiz del documento HTML
+:root{
+    background-color: blueviolet;
+}
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.enlace{
+    display: inline-block;
+    width: 200px;
+    background: tomato;
+    color: wheat;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid white;
+}
+
+/*Solo sirven para elementos a*/
+.enlace:link{
+    background: black;
+    color: white;
+}
+
+.enlace:visited{
+    background-color: purple;
+}
+
+/*En dispositivos moviles el hover se 
+ejecuta hasta que se de clic*/
+
+.enlace:hover{
+    opacity: 0.3;
+    transition: .3s;
+}
+
+.enlace:hover{
+    padding: 30px 20px; 
+    transition: .3s;
+}
+
+.enlace:active{
+    background: steelblue;
+}
+
+.event{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.event:active{
+    padding: 25px;
+    transition: .4s;
+}
+
+
+/*Elemento targeteados*/
+#target{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: steelblue;
+}
+
+#target:target{
+    margin-left: 50px;
+}
+
+.form{
+    margin: 30px auto;
+    padding: 20px 10px;
+    width: 80%;;
+    background-color: gainsboro;
+    border: 1px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Cuanod el form tenga un hijo en 
+focus cambia de color*/
+.form:focus-within{
+    background-color: darkcyan;
+}
+
+.form_title{
+    text-align: center;
+    color: black;
+    margin: 20px auto;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    margin: 10px 10px 10px 30px;
+}
+
+input[type='text'],
+input[type='email']{
+    width: 90%;
+    padding: 12px 5px;
+    border: none;
+
+    /*Quita el borde al seleccionar 
+    el input*/
+    outline: none;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus{
+    background-color: rgba(137, 43, 226, 0.466);
+    transition: 0.3s;
+    
+}
+
+/*Chechket funciona solo 
+para checkbox y radios*/
+
+
+/*Esto no sirve jaja*/
+input[type="checkbox"]:checked{
+    background-color: blueviolet;
+}
+
+h2:not(.title){
+    color: crimson;
+}
+
+h2:not(.title):not(:hover){
+    color: blueviolet;
+}
+
+h2:not(:hover){
+    text-decoration: line-through ;
+}

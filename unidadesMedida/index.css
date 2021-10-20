@@ -1,0 +1,69 @@
+*{
+    margin: 10px auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+.opinion{
+    width: 70%;
+    margin: 40px auto;
+
+    /*
+        em es heredado del padre
+        pero tambien es dinamico
+        si yo tuviera aqui un font-size
+        de 50px mi pading sería de 50px
+        para todos los lados y so no
+        agarra el default
+    */
+    padding: 1em;
+    box-shadow: 8px 8px 8px rgb(125, 125,125);
+}
+
+.title{
+    /*1rem es aproximadamente 16px
+    Es la undidad de medida por default
+    de html en textos
+
+    1 rem = 16px
+      x   = numeor de pixeles
+
+
+    */
+    font-size: 2rem;
+}
+
+/*
+    rem: relativo al tamaño de fuente del html
+    em: relativo al tamaño de fuente del padre 
+    o del objeto como tal
+*/
+
+.container{
+    /*max-width: 400px;
+    max-height: 400px;
+    min-width: 200px;
+    min-height: 200px;*/
+
+    /*Los porcentajes son relativos al padre
+    el padre necesita tener definido 
+    width and hight*/
+    width: 70%;
+    height: 300px;
+    background: #c943c9;
+    margin: 30px auto;
+}
+
+/*
+viewport width vw
+viewport height vh
+
+viewport es la pantalla,
+lo que se ve
+
+*/

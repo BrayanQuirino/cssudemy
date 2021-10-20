@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background: orangered;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+
+    border: 1px solid transparent;
+    
+
+    /*
+    shorthand
+    1. 
+    border: width style color;
+    border: 10px solid black;
+    
+    2.
+    border-width: top right bottom left;
+    border-style: top right bottom left;
+    border-color: top right bottom left;
+
+    border-width: 5px 7px;
+    border-style: solid groove;
+    border-color: purple gray;
+
+    3. 
+    border-top: 10px solid black;
+    border-bottom: 5px groove gold;
+    border-right: 5px groove gold;
+    border-left: 5px groove gold;
+
+    4. 
+
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 10px;
+    */
+
+
+}
+
+
+/*
+Para no desmadrar la imagen usamos
+object-fit: cover;
+
+*/
+.img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 50px auto;
+    border-radius: 0% 30%;
+}

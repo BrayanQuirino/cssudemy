@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.enlaces{
+    /*display: block; Elemento en bloque*/
+    padding: 20px 20px;
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    background: crimson;
+    color: white;
+}
+
+/* 
+    Los elementos en linea son aquellos
+    que solo ocupan sucontenido, en ca-
+    bio los elementos en bloque son aqu
+    llos que ocupan todo su espcio, es 
+    decir el tamaño del padre.
+*/
+.block{
+    /*display: none; se quita del DOM*/
+    opacity: 0.1;
+}
+
+
+
+/*Especificidad*/
+
+
+body>nav>a.enlaces{
+    font-size: 20px;
+}
+
+/*El elemento a no se modifica por que
+la sentencia de arriba tiene mayor esp
+ecificidad y en CSS especificidad mata
+cascada
+
+Nivel de especificidad(0-100) - selector
+
+1000 - inlice CSSS
+100 - ID
+10 - CLASS
+1 - elemento
+*/
+
+a{
+    font-size: 40px;
+}
+
+
+/*!!!!ROMPER ESPECIFICIDAD
+    MALA practica usar
+    !important
+
+*/
+
+a {
+    font-size: 40px !important;
+}
+
+
+
+/*HERENCIA*/
+
+/*
+Algunas propiedades se heredan solas
+otras no se heredan y podemos obliar
+a heredar con la palabra inherent
+
+Para no heredar usamos la palabra:
+inicial
+
+*/
+.herencia{
+    color: white;
+    background-color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: 5px solid black;
+    height: 100px;
+}
+
+h2{
+    border: inherit;
+    font-family: initial;
+}

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #0ba360, #3cba92);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    width: 90%;
+    margin: 10px auto;
+    
+
+    background-color: white;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+    box-shadow: 0px 0px 10px 3px #0b6e43;
+
+
+    color: #0ba360;
+}
+
+.goku{
+    border: 1px solid transparent;
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 20px #0b6e43);
+}
+
+.parrafo{
+    padding: 10px 20px;
+    text-align: justify;
+    /*letter-spacing: 20px;*/
+    word-spacing: 2px;
+
+    /*Igual que drop-shadow*/
+    text-shadow: 0px 0px 10px black;
+
+    /*Mayusculas, minusculas, primera letra en mayusculas etc*/
+    text-transform: uppercase;
+
+    /*Ancho de linea*/ 
+    line-height: 50px;
+}
+
+.button{
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #0b6e43;
+    border: 1px solid #0b6e43;
+    padding: 10px 25px;
+}

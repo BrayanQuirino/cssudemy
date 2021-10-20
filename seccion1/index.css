@@ -1,0 +1,66 @@
+/*Selector universa
+
+*{
+    text-decoration: underline;
+}*/
+
+
+/*Selector de tipo*/
+nav{
+
+}
+h2{
+    color: lightgray;
+}
+
+/*Selector de clase*/
+
+.borde{
+    border: 1px solid black;
+    background: steelblue;
+    text-align: center;
+}
+
+.titulo{
+    color: tomato
+}
+
+
+.titulo.borde{
+    background: steelblue;
+    border: 1px solid black;
+}
+
+/*Selector de ID*/
+#section{
+    border: 1px solid black;
+}
+
+/*Selector de atributo
+
+elemento[atributo]
+*/
+a[href]{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+/*Por valor exacto*/
+a[href="https://alexcgdesign.com/inicio"]{
+    color: red;
+}
+
+/*Por valor que tengan al principio*/
+a[href^="hsttps"]{
+    color: darkolivegreen;
+}
+
+/*Por valor que tengan al final*/
+a[href$=".org"]{
+    color: yellow;
+}
+
+/*Como un like*/
+a[href*="alexcgdesign"]{
+    color: darksalmon;
+}

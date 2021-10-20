@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+
+    --heigth-nav: 90px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav{
+    background-color: #143d64;
+    height: var(--heigth-nav);
+    color: white;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+
+    align-items: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+}
+
+.heroe__main{
+    display: flex;
+    height: calc(100vh - var(--heigth-nav));
+    align-items: center;
+    min-height: 600px;
+}
+
+.heroe__texts{
+    flex: 1;
+}
+
+.heroe__picture{
+    flex: 1;
+    /* background-image: url(./learn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.heroe__img{
+    width: 100%;
+    border-radius: 5px;
+    max-width: 450px;
+    display: block;
+}
+
+.heroe__title{
+    font-size: 3rem;
+}
+
+.heroe__paragraph{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.cta{
+    background: #6c63ff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.cta:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width:900px){
+    :root{
+        --heigth-nav: 100px;
+    }
+
+    .nav__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .heroe__main{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .heroe__picture{
+        order: -1;
+    }
+
+    .heroe__img{
+        max-width: 380px;
+    }
+
+    .heroe__title{
+        font-size: 2.5rem;
+    }
+
+    .heroe__paragraph{
+        font-size: 1rem;
+    }
+
+    .heroe__texts{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

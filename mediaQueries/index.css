@@ -1,0 +1,60 @@
+:root{
+    --color-basic:crimson;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @media <media-type> and (expression){
+     Se ejecuta lo que está en media querie 
+} */
+
+
+.title{
+    font-size: 3em;
+    color: var(--color-basic);
+    text-align: center;
+}
+
+@media print{
+    .title{
+        color: steelblue;
+        font-size: 5em;
+        font-style: italic;
+    }
+}
+
+
+/* @media screen and (max-width:600px){
+    .title{
+        font-size: 2em;
+    }
+    :root{
+        --color-basic: darkblue;
+    }
+} */
+/* 
+@media screen and (orientation: landscape){
+    h2{
+        color: blueviolet;
+        background-color: yellow;
+        height: 100vh;
+    }
+} */
+
+/* @media screen and (orientation:portrait) and (max-width:600px) {
+    .title{
+        text-align: left;
+    }
+} */
+
+
+@media screen and (max-width:400px), (min-width:900px) {
+    .title{
+        color: white;
+        background-color: black;
+    }
+}

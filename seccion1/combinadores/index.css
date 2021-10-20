@@ -1,0 +1,44 @@
+/*Varios selectores*/
+h2,a{
+    color: indigo;
+}
+
+/* Descendientes indirectos, es decir nietos*/
+
+div p{
+    color:palevioletred;
+}
+
+/* Descendientes directos, es decir hijos*/
+.contenedor>p{
+    color:palevioletred;
+}
+
+nav.contenedor{
+    background-color: brown;
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: firebrick;
+}
+
+.contenedor>a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Selector adyacente. Unicamente al 
+elemento p siguiente seleccionalo
+*/
+h2+p{
+    color: gold;
+}
+
+
+/*Selector adyacente. A todos los hermanos
+o elementos p siguientes
+*/
+h3~p{
+    color: green;
+}
